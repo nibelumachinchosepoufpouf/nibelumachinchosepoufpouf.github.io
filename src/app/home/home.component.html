@@ -1,3 +1,9 @@
-<div class="">
-    <h1>home</h1>
+<div class="home">
+    <button mat-raised-button (mouseover)="handleMouseOver()" (mouseout)="handleMouseOut()" [ngClass]=" {
+        'none': mouseOverCount === 0,
+        'first': mouseOverCount === 1,
+         'second': mouseOverCount === 2,
+          'third': mouseOverCount === 3,
+          'fourth': mouseOverCount === 4,
+          'fifth': mouseOverCount === 5 }" color="warn">Click Here !</button>
 </div>
