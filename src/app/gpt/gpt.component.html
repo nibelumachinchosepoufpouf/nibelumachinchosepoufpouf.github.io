@@ -1,0 +1,15 @@
+<div class="">
+    <h1>Chat GPT</h1>
+    <form [formGroup]="queryFormGroup" (ngSubmit)="handleAskGPT()">
+        <div class="">
+            <label>Query : </label>
+            <textarea froControlName="query">
+
+            </textarea>
+            <button>Ask GPT</button>
+        </div>
+    </form>
+    <div class="">
+        <pre>{{result | json}}</pre>
+    </div>
+</div>
